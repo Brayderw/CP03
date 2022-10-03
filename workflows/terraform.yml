@@ -1,7 +1,6 @@
 name: Terraform Apply
 
 on: [push]
-
 jobs:
   terraform_apply:
     runs-on: ubuntu-latest
