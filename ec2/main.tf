@@ -1,6 +1,6 @@
 # SECURITY GROUP
-resource "aws_security_group" "sg-pub" {
-    name        = "sg-pub"
+resource "aws_security_group" "sg_pub" {
+    name        = "sg_pub"
     description = "Security Group public"
     vpc_id      = var.vpc_id
     
