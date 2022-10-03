@@ -105,7 +105,7 @@ resource "aws_vpc_endpoint" "ec2" {
   vpc_id            = "${aws_vpc.vpc10.id}"
   service_name = "com.amazonaws.us-east-1.ec2"
   vpc_endpoint_type = "Interface"
-  security_group_ids = [var.sg_pub_id]
+  security_group_ids = [var.sg_pub.id]
 
 }
 
@@ -118,5 +118,5 @@ resource "aws_sns_topic" "topic" {
 resource "aws_sns_topic_subscription" "email-target" {
   topic_arn = aws_sns_topic.topic.arn
   protocol  = "email"
-  endpoint  = "guedson.ge@gmail.com"
+  endpoint  = "lopes0919@gmail.com"
 }
